@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class LoginController {
-
+    /**
+     * 登录接口
+     * @param employee
+     * @return
+     */
     @RequestMapping(value="/login",method = RequestMethod.POST)
     public AjaxResult login(@RequestBody Employee employee){
         if ("123".equals(employee.getPassword())&&"shawn".equals(employee.getUsername())){
