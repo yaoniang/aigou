@@ -10,6 +10,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableEurekaClient//使用配置中心客户端
 public class ZuulApplication9001 {
     public static void main(String[] args) {
+        //可以不需要参数
         SpringApplication.run(ZuulApplication9001.class);
     }
 }
