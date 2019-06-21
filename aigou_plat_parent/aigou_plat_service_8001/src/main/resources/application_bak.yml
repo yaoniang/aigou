@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: test
+---
+server:
+  port: 8001
+spring:
+  application:
+     name: AIGOU_PLAT_TEST
+  profiles: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/ #告诉服务提供者要把服务注册到哪儿
+  instance:
+    prefer-ip-address: true
+---
+server:
+  port: 8001
+spring:
+  application:
+     name: AIGOU_PLAT_DEV
+  profiles: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/ #告诉服务提供者要把服务注册到哪儿
+  instance:
+    prefer-ip-address: true

@@ -13,6 +13,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yaoniang/springcloud-study.git
+          uri: https://github.com/yaoniang/aigou_config.git
           username: yaoniang
           password: xy514523
